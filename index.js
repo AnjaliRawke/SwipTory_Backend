@@ -9,7 +9,7 @@ const corsOptions = require('./config/corsOptions')
 const authRoutes = require("./routes/auth.routes")
 const indexRoutes = require("./indexRoutes")
 const credentials = require("./middlewares/credentials")
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 3000
 app.use(credentials)
 app.use(cors(corsOptions))
 app.use(express.urlencoded({ extended: true }))
